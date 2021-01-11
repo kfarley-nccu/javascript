@@ -2,7 +2,7 @@
 
 var contentDivs = document.getElementsByClassName('directory-content');
 
-contentDivs.foreach(indPagerFunction);
+contentDivs.forEach(indPagerFunction);
 
 function indPagerFunction(item, index) {
 
