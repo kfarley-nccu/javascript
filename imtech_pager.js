@@ -49,7 +49,7 @@ function indPagerFunction(item, index) {
                 if (i != currentPage) {
                     pagingControls += '<li><a href="#" onclick="pager.showPage(' + i + '); return false;">' + i + '</a></li>';
                 } else {
-                    pagingControls += '<li>' + i + '</li>';
+                    pagingControls += '<li class="current">' + i + '</li>';
                 }
             }
 
