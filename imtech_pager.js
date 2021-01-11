@@ -14,6 +14,7 @@ function indPagerFunction(item, index) {
         var contentId = "#" + item.id;
         var pagingId = "#control-" + contentId;
         
+        alert('Here');
         alert(contentId);
 
         this.paragraphsPerPage = 3;
