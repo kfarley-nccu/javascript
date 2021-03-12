@@ -32,12 +32,9 @@ Imtech.Pager = function() {
     }
 
     var renderControls = function(container, currentPage, numPages) {
-        if (numPages <= 1) {
-           var pagingControls = '<ul>';
-        }
-        else {
-           var pagingControls = 'Page: <ul>';
-        }
+       
+        var pagingControls = 'Page: <ul>';
+        
 
         for (var i = 1; i <= numPages; i++) {
             if (i != currentPage) {
