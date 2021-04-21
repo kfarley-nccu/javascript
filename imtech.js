@@ -27,7 +27,9 @@ Imtech.Pager = function() {
 
         $(this.pagingContainerPath).html(html);
 
-        renderControls(this.pagingControlsContainer, this.currentPage, this.numPages());
+        if (this.numPages() >= 2) {
+            renderControls(this.pagingControlsContainer, this.currentPage, this.numPages());
+        }
 
     }
 
