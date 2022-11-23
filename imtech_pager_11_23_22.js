@@ -21,7 +21,7 @@ Imtech.Pager = function(pagerName) {
         var html = '';
         this.paragraphs.slice((page-1) * this.paragraphsPerPage,
             ((page-1)*this.paragraphsPerPage) + this.paragraphsPerPage).each(function() {
-            html += '<div>' + $(this).html() + '</div>';
+            html += '<div class="directory-override">' + $(this).html() + '</div>';
         });
 
         $(this.pagingContainerPath).html(html);
